@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Cafe 32",
+    "latitude": 39.7404898483,
+    "longitude": -8.81470181433,
+    "icon": "fork.knife",
+    "imageURL": "https://scontent-lis1-1.xx.fbcdn.net/v/t1.6435-9/150690187_3903335839709403_5801036028887963935_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=oDFXXH7rCmgAX-xPqSP&_nc_ht=scontent-lis1-1.xx&oh=00_AfBmkJeamor4yxGPKf620ZoDMkPAgYqizrhw_59lNimIeA&oe=638E84AD",
+    "sponsored": false,
+    "overlay": false,
+    "rewardPoints": 18,
+    "rating": 7.5,
+    "rangeMeters": 30,
+    "details": "From Wikipedia: Leonard \"Sonny\" Miller, the owner of Miller's Office Supply, sought to build the chair to attract attention to his furniture business. The chair was modeled off of an office chair from The HON Company with the dimensions of the chair converted from inches to feet. Construction of the chair took place in 1981 at the empty lot next to the furniture showroom. The chair was built using 10 tons of steel, 15 tons of cement, and can withstand 85-mile-per-hour (137 km/h) winds. A spiral staircase was also built to bring people up to the 15-foot (4.6 m) square seat. Construction of the chair was completed in May 1981."
+  },
+  {
+    "name": "Leiria Castle",
+    "latitude": 39.7436,
+    "longitude": -8.8071,
+    "icon": "building.columns",
+    "imageURL": "https://www.europadestinos.com.br/wp-content/uploads/2019/12/castelo-de-leiria-foto.jpg",
+    "sponsored": false,
+    "overlay": false,
+    "rewardPoints": 5,
+    "rating": 9.5,
+    "rangeMeters": 200,
+    "details": "From Roadside America: The basket is a replica -- 160 times larger -- of Longaberger's Medium Market Basket. It's 192 feet long and 126 feet wide at the bottom, spreading to 208 feet long and 142 feet wide at the roofline. It is a magnificent sight."
+  },
+]
