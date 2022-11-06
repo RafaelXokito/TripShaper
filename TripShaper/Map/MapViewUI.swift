@@ -89,7 +89,7 @@ final class MapCoordinator: NSObject, MKMapViewDelegate {
             annotationView.canShowCallout = true
             annotationView.glyphImage = UIImage(systemName: placeAnnotation.icon)
             annotationView.clusteringIdentifier = "cluster"
-            annotationView.markerTintColor = UIColor(displayP3Red: 0.082, green: 0.518, blue: 0.263, alpha: 1.0)
+            annotationView.markerTintColor = UIColor(red: 0.71, green: 0.22, blue: 0.22, alpha: 1.00)
             annotationView.titleVisibility = .visible
 //                annotationView.detailCalloutAccessoryView = UIImage(systemName: placeAnnotation.icon).map(UIImageView.init)
             let tapGesture = CustomTapGestureRecognizer(target: self,

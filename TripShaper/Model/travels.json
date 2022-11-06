@@ -1,0 +1,14 @@
+[
+  {
+    "startDate": "05/11/2022",
+    "endDate": "05/11/2022",
+    "source": "Lisbon",
+    "destination": "Leiria"
+  },
+  {
+    "startDate": "10/12/2022",
+    "endDate": "15/12/2022",
+    "source": "Leiria",
+    "destination": "Porto"
+  },
+]

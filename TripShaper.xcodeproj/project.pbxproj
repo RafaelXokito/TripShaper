@@ -19,6 +19,13 @@
 		896383BA2916D93300CC210A /* MapDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896383B82916D93300CC210A /* MapDirectory.swift */; };
 		896383BC291708BC00CC210A /* DetailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896383BB291708BC00CC210A /* DetailMapView.swift */; };
 		896383BF29172F6A00CC210A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 896383BE29172F6A00CC210A /* Kingfisher */; };
+		896383C22917418400CC210A /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 896383C12917418400CC210A /* AlertToast */; };
+		896383C6291743F100CC210A /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896383C5291743F100CC210A /* ImagePickerView.swift */; };
+		896383C82917443B00CC210A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896383C72917443B00CC210A /* CameraView.swift */; };
+		896383CA29177C6200CC210A /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896383C929177C6100CC210A /* PhotosView.swift */; };
+		896383CC29178E6400CC210A /* travels.json in Resources */ = {isa = PBXBuildFile; fileRef = 896383CB29178E6400CC210A /* travels.json */; };
+		896383CE29178FB200CC210A /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896383CD29178FB200CC210A /* Travel.swift */; };
+		896383D12917909100CC210A /* TravelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896383D02917909100CC210A /* TravelsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +42,12 @@
 		896383B72916D93300CC210A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		896383B82916D93300CC210A /* MapDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDirectory.swift; sourceTree = "<group>"; };
 		896383BB291708BC00CC210A /* DetailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapView.swift; sourceTree = "<group>"; };
+		896383C5291743F100CC210A /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		896383C72917443B00CC210A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		896383C929177C6100CC210A /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		896383CB29178E6400CC210A /* travels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = travels.json; sourceTree = "<group>"; };
+		896383CD29178FB200CC210A /* Travel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		896383D02917909100CC210A /* TravelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896383BF29172F6A00CC210A /* Kingfisher in Frameworks */,
+				896383C22917418400CC210A /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,10 +85,9 @@
 				8917BC9429157F9E007C0F8A /* Info.plist */,
 				8917BC6F29157AC1007C0F8A /* TripShaperApp.swift */,
 				8917BC7129157AC1007C0F8A /* ContentView.swift */,
-				896383AD2916B7E500CC210A /* MapViewModel.swift */,
-				896383AB2916ACEF00CC210A /* MapView.swift */,
-				896383BB291708BC00CC210A /* DetailMapView.swift */,
-				896383AF2916D70500CC210A /* MapViewUI.swift */,
+				896383CF2917906900CC210A /* Travels */,
+				896383C4291743E600CC210A /* Camera */,
+				896383C3291743D000CC210A /* Map */,
 				896383B62916D92C00CC210A /* Model */,
 				8917BC7329157AC3007C0F8A /* Assets.xcassets */,
 				8917BC7529157AC3007C0F8A /* Preview Content */,
@@ -96,8 +109,39 @@
 				896383B82916D93300CC210A /* MapDirectory.swift */,
 				896383B72916D93300CC210A /* Location.swift */,
 				896383B42916D91800CC210A /* locations.json */,
+				896383CD29178FB200CC210A /* Travel.swift */,
+				896383CB29178E6400CC210A /* travels.json */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		896383C3291743D000CC210A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				896383AD2916B7E500CC210A /* MapViewModel.swift */,
+				896383AB2916ACEF00CC210A /* MapView.swift */,
+				896383BB291708BC00CC210A /* DetailMapView.swift */,
+				896383AF2916D70500CC210A /* MapViewUI.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		896383C4291743E600CC210A /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				896383C929177C6100CC210A /* PhotosView.swift */,
+				896383C5291743F100CC210A /* ImagePickerView.swift */,
+				896383C72917443B00CC210A /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		896383CF2917906900CC210A /* Travels */ = {
+			isa = PBXGroup;
+			children = (
+				896383D02917909100CC210A /* TravelsView.swift */,
+			);
+			path = Travels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +162,7 @@
 			name = TripShaper;
 			packageProductDependencies = (
 				896383BE29172F6A00CC210A /* Kingfisher */,
+				896383C12917418400CC210A /* AlertToast */,
 			);
 			productName = TripShaper;
 			productReference = 8917BC6C29157AC1007C0F8A /* TripShaper.app */;
@@ -149,6 +194,7 @@
 			mainGroup = 8917BC6329157AC1007C0F8A;
 			packageReferences = (
 				896383BD29172F6A00CC210A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				896383C02917418400CC210A /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			productRefGroup = 8917BC6D29157AC1007C0F8A /* Products */;
 			projectDirPath = "";
@@ -165,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896383B52916D91800CC210A /* locations.json in Resources */,
+				896383CC29178E6400CC210A /* travels.json in Resources */,
 				8917BC7729157AC3007C0F8A /* Preview Assets.xcassets in Resources */,
 				8917BC7429157AC3007C0F8A /* Assets.xcassets in Resources */,
 			);
@@ -178,11 +225,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8917BC7229157AC1007C0F8A /* ContentView.swift in Sources */,
+				896383CE29178FB200CC210A /* Travel.swift in Sources */,
 				896383AC2916ACEF00CC210A /* MapView.swift in Sources */,
 				896383BC291708BC00CC210A /* DetailMapView.swift in Sources */,
+				896383C82917443B00CC210A /* CameraView.swift in Sources */,
+				896383CA29177C6200CC210A /* PhotosView.swift in Sources */,
 				8917BC7029157AC1007C0F8A /* TripShaperApp.swift in Sources */,
+				896383C6291743F100CC210A /* ImagePickerView.swift in Sources */,
 				896383BA2916D93300CC210A /* MapDirectory.swift in Sources */,
 				896383B92916D93300CC210A /* Location.swift in Sources */,
+				896383D12917909100CC210A /* TravelsView.swift in Sources */,
 				896383AE2916B7E500CC210A /* MapViewModel.swift in Sources */,
 				896383B02916D70500CC210A /* MapViewUI.swift in Sources */,
 			);
@@ -317,7 +369,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TripShaper/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app need your camera to confirm your visits.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need your location to show it on the map.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app need to access your library to automatic save the images taken.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -348,7 +402,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TripShaper/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app need your camera to confirm your visits.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need your location to show it on the map.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app need to access your library to automatic save the images taken.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -399,6 +455,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		896383C02917418400CC210A /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -406,6 +470,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 896383BD29172F6A00CC210A /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		896383C12917418400CC210A /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 896383C02917418400CC210A /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -35,6 +35,7 @@ import MapKit
 
 final class Location: NSObject, Decodable, Identifiable {
     let name: String
+    let city: String
     let imageURL: String
     let sponsored: Bool
     let details: String
@@ -44,6 +45,7 @@ final class Location: NSObject, Decodable, Identifiable {
     let rating: Float
     let rangeMeters: Float
     let location: CLLocation
+    let accessibility: Bool
     private let regionRadius: CLLocationDistance = 1000
     let region: MKCoordinateRegion
     let id = UUID()
@@ -52,6 +54,7 @@ final class Location: NSObject, Decodable, Identifiable {
         
         enum CodingKey: Swift.CodingKey {
             case name
+            case city
             case imageURL
             case sponsored
             case details
@@ -62,10 +65,13 @@ final class Location: NSObject, Decodable, Identifiable {
             case rewardPoints
             case rating
             case rangeMeters
+            case accessibility
         }
         
         let values = try decoder.container(keyedBy: CodingKey.self)
         name = try values.decode(String.self, forKey: .name)
+        city = try values.decode(String.self, forKey: .city)
+        accessibility = try values.decode(Bool.self, forKey: .accessibility)
         imageURL = try values.decode(String.self, forKey: .imageURL)
         icon = try values.decode(String.self, forKey: .icon)
         sponsored = try values.decode(Bool.self, forKey: .sponsored)

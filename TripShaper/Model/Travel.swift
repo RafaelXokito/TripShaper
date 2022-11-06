@@ -31,29 +31,28 @@
 /// THE SOFTWARE.
 
 import Foundation
+import MapKit
 
-struct MapDirectory {
-    let places: [Location] = {
-        guard let json = Bundle.main.url(forResource: "locations", withExtension: ".json") else {
-            fatalError("Unable to load json")
-        }
-        do {
-            let jsonData = try Data(contentsOf: json)
-            return try JSONDecoder().decode([Location].self, from: jsonData)
-        } catch {
-            fatalError("Unable to load or parse json file from bundle")
-        }
-    } ()
+final class Travel: NSObject, Decodable, Identifiable {
+    let startDate: String
+    let endDate: String
+    let source: String
+    let destination: String
+    let id = UUID()
     
-    let travels: [Travel] = {
-        guard let json = Bundle.main.url(forResource: "travels", withExtension: ".json") else {
-            fatalError("Unable to load json")
+    init(from decoder: Decoder) throws {
+        
+        enum CodingKey: Swift.CodingKey {
+            case startDate
+            case endDate
+            case source
+            case destination
         }
-        do {
-            let jsonData = try Data(contentsOf: json)
-            return try JSONDecoder().decode([Travel].self, from: jsonData)
-        } catch {
-            fatalError("Unable to load or parse json file from bundle")
-        }
-    } ()
+        
+        let values = try decoder.container(keyedBy: CodingKey.self)
+        startDate = try values.decode(String.self, forKey: .startDate)
+        endDate = try values.decode(String.self, forKey: .endDate)
+        source = try values.decode(String.self, forKey: .source)
+        destination = try values.decode(String.self, forKey: .destination)
+    }
 }
